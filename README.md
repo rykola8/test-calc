@@ -26,3 +26,7 @@ Valūtas simbola ievads: Lietotājs iekļauj eiro simbolu (€) kopā ar daudzum
 Lokālas savietojamības: Lietotājs no reģiona, kur decimālo atdalītāju vai tūkstošgadu atdalītāju atšķiras no standarta ievades formāta, mēģina veikt konvertēšanu.  
 Laika beigas: Lietotne neizdodas iegūt valūtas kursu noteiktajā laika limitā sakarā ar lēnu tīklu vai servera problēmām.  
 Nederīgs valūtas kursa: Iegūtais valūtas kurss ir nederīgs vai novecojis, izraisot neprecīzu konvertāciju.  
+
+  
+** Dokumentācija Unit Testiem**  
+https://docs.python.org/3/library/unittest.html#assert-methods
