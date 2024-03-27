@@ -1,5 +1,5 @@
 import unittest
-from bmi_calculator import calculate_bmi, interpret_bmi
+from functions import calculate_bmi, interpret_bmi
 
 class TestBMICalculator(unittest.TestCase):
 
@@ -15,6 +15,8 @@ class TestBMICalculator(unittest.TestCase):
 
         # Test case 4: Obese BMI
         self.assertAlmostEqual(calculate_bmi(100, 1.75), 32.65, places=2)
+        # Test case 5: Obese BMI (mine)
+        self.assertAlmostEqual(calculate_bmi(67, 1.8), 20.68, places=2)
 
     def test_interpret_bmi(self):
         # Test case 1: Normal BMI
@@ -28,6 +30,9 @@ class TestBMICalculator(unittest.TestCase):
 
         # Test case 4: Obese BMI
         self.assertEqual(interpret_bmi(32.65), "Obese")
+
+        # Test case 5: Obese BMI
+        self.assertEqual(interpret_bmi(20.68), "Normal weight")
 
 if __name__ == "__main__":
     unittest.main()
